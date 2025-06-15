@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Birthday Surprise Intro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <div class="centered-container">
+    <img src="image/2.jpg" height="500px">
+    <h1>Happy Birthday, My Love!</h1>
+    <button id="startBtn">Start Your Surprise</button>
+  </div>
+
+  <audio id="bgMusic" src="assets/music/background-music.mp3" loop></audio>
+
+  <script>
+    const startBtn = document.getElementById('startBtn');
+    const bgMusic = document.getElementById('bgMusic');
+
+    startBtn.addEventListener('click', () => {
+      bgMusic.play();
+      window.location.href = 'menu.html';
+    });
+  </script>
+</body>
+</html>
